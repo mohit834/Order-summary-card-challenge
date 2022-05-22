@@ -18,7 +18,7 @@ To make a summary card from the given details and images.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](Screenshot (181).png)
 
 ### Links
 
