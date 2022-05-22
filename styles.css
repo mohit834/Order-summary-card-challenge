@@ -1,0 +1,159 @@
+/* For the backgroung image and the container alignment */
+html {
+  height: 100%;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* resize: both; */
+  /* overflow: scroll; */
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+}
+
+/* Container has one flex box inside it  */
+/* 1-> card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Card has two flex boxes inside it */
+/* 1 -> card-image */
+/* 2 -> card-info */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 85%;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px hsl(226, 69%, 83%);
+}
+
+.card-image-class {
+  width: 100%;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* Card-info has summary,card-plan,change-link and button */
+.card-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+/* Summary contains h1 and p elements */
+.summary {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.summary p {
+  width: 71%;
+}
+
+.summary h1 {
+  width: 70%;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+/* Card plan has music-icon-price and change link divs */
+.card-plan {
+  background-color: hsl(225, 100%, 98%);
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+/* Music icon price has two divs music-icon and Price */
+.music-icon-price {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* This is a part of the price div */
+.Annual-plan-text {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+/* change link div */
+.change-link {
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.change-l:hover {
+  color: rgb(130, 102, 243);
+}
+
+/* Button the last one in card-info */
+.btn {
+  margin-top: 20px;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  color: white;
+  width: 83%;
+  height: 40px;
+  box-shadow: 0 20px 20px hsl(225, 100%, 94%);
+
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(130, 102, 243);
+}
+
+/* Change the font weight for the cancel */
+.cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* Footer of the page */
+.attribution {
+  margin-top: 30px;
+}
+
+/* For Responsive site */
+@media screen and (min-width: 720px) {
+  .card {
+    width: 50%;
+  }
+}
